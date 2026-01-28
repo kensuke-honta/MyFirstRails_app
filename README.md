@@ -1,24 +1,36 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+PostgreSQL,15,メインデータベース
+Redis,7-alpine,キャッシュ / 非同期処理用
+Docker,Latest,コンテナ仮想化
 
-Things you may want to cover:
+- Ruby version
+  Ruby,3.2.2
+- rails version
+  Rails,7.x
+- System dependencies
 
-* Ruby version
+- Configuration
 
-* System dependencies
+- Database creation
+  PostgreSQL 15
+- Database initialization
 
-* Configuration
+- How to run the test suite
 
-* Database creation
+- Services (job queues, cache servers, search engines, etc.)
 
-* Database initialization
+- Deployment instructions
 
-* How to run the test suite
+## 開発用コマンドリファレンス
 
-* Services (job queues, cache servers, search engines, etc.)
+### 1. コンテナの操作
 
-* Deployment instructions
+コンテナの起動状態を管理するための基本コマンドです。
 
-* ...
+- **コンテナの起動（バックグラウンド）**
+  ```bash
+  docker-compose up -d
+
+  ```
+- ...
